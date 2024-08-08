@@ -8,8 +8,9 @@ Este projeto é uma interface web construída usando Next.js e heatmap.js para g
 
 - **Upload de JSON**: Permite ao usuário fazer upload de um arquivo JSON que será usado para gerar o heatmap.
 - **Geração Dinâmica de Heatmap**: A aplicação processa o JSON e sobrepõe um mapa de calor sobre uma imagem base, permitindo ao usuário baixar a imagem gerada.
-- **Redimensionamento da Imagem:**: Botões para aumentar e diminuir o tamanho da imagem base, facilitando a visualização do heatmap.
+- **Redimensionamento da Imagem**: Botões para aumentar e diminuir o tamanho da imagem base, facilitando a visualização do heatmap.
 - **Reset de Configurações**: Opção de resetar todas as configurações, deletar a imagem gerada, para simular o projeto desde o inicio.
+- **Download de Arquivo JSON**: Página que permite ao usuário baixar o arquivo `response.json` da pasta `public`.
 
 ## Tecnologias Utilizadas
 
@@ -45,7 +46,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 ## Uso
 
-1. Forneça os dados JSON no campo de entrada designado. Certifique-se de que o formato do JSON esteja correto. Exemplo JSON: nas pasta public arquivo response.json.
+1. Forneça os dados JSON no campo de entrada designado. Certifique-se de que o formato do JSON esteja correto.
+    - **Caso não tenha o Arquivo de entrada**: Vá até a página `/download`, que irá baixar o arquivo `response.json` da pasta `public`.
 2. Após enviar o JSON correto, o Heatmap será automaticamente adicionado sobre a imagem.
 3. Se necessário, você pode baixar o mapa de calor gerado como uma imagem PNG clicando no botão "Baixar".
-
